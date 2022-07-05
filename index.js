@@ -1,6 +1,5 @@
 
 // // // single line commentl
-
 // // /*
 
 // // multi line comment
@@ -88,6 +87,41 @@ console.log(score1/string)
 
 document.write(typeof NaN)
 document.querySelector("h1").innerHTML='welcome to our company'
+
+//array and object
+
+// fist method
+let fruits=[
+    'mango',
+    'apple',
+    'orange',
+    'grapes',
+    'guava'
+]
+fruits[0]='water melon'
+
+//to add to the end of an array
+fruits.push('melon soup')
+//to add to the begining of an array
+fruits.unshift('banana')
+//to remove the last item of an array
+fruits.shift()
+fruits.pop()
+console.log(fruits)
+
+// console.log(fruits)
+
+
+//secnd method
+let markets=  new Array(
+'eke',
+'orie',
+'afor',
+'nkwo'
+
+)
+console.log(markets)
+
 
 
 
