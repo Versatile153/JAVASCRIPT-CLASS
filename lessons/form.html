@@ -4,15 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* .wrapper{
+            margin: auto;
+            background: gray;
+            width: 400px;
+            height: 400px;
+        } */
+
+        form{
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        form input{
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 2px solid blue;
+        }
+        .error{
+            background-color: red;
+            color: white;
+            border: 3px dotted black;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <h2></h2>
 
-        <input type="text" name="" id="task">
-        <input type="submit" name="" id="">
-    </form>
-    <script src="form.js"></script>
+    <div class="wrapper">
+        <form action="msg.html" id="form">
+            <h5></h5>
+            <input type="text" name="" id="first" placeholder="first-name">
+            <input type="text" name="" id="second" placeholder="seecond-name">
+            <input type="number" name="" id="phone" placeholder="phone" >
+            <input type="text" name="" id="email" placeholder="email">
+            <input type="submit" name="" id="">
+        </form>
+    </div>
+
+    <script>
+        const form=document.querySelector("#form")
+        form.addEventListener("submit",function(e){
+           const firstName=document.querySelector("#first")
+           const h5=document.querySelector("h5")
+           if(firstName.value==''|| firstName==null){
+               h5.innerHTML="please fill all fields"
+               document.querySelector("#first").focus()
+               h5.classList.add("error")
+              
+                 e.preventDefault()
+               
+           }
+
+
+        
+           else{
+               return true
+           }
+            
+            e.preventDefault()
+            
+            
+
+
+        })
+
+
+
+    </script>
+    
 </body>
 </html>
