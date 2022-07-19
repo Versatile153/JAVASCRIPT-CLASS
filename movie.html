@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .wrapper{
+        background-color: gray;
+        width: 100%;
+        text-transform: capitalize;
+       min-height: 100vh;
+       box-sizing: border-box;
+       overflow: hidden;
+        border: 2px solid black;
+    }
+    .my-movie{
+        text-align: center;
+        margin-top: 20px;
+
+       
+    }
+    .my-movie input{
+        margin-top: 10px;
+        width: 300px;
+
+        padding: 10px;
+
+    }
+    .my-movie #button{
+        padding: 10px;
+        width: 150px;
+        background-color: green;
+        cursor: pointer;
+        color: white;
+    }
+
+    .wrapper h2{
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 50px;
+        color: wheat;
+    }
+    .movie-list{
+        width: 50%;
+        margin: auto;
+      min-height: 0vh;
+        background-color: white;
+    }
+    .movie-list ul li{
+        list-style: none;
+        font-size: large;
+        font-weight: bolder;
+        padding: 15px;
+        
+    }
+    .movie-list ul li:hover{
+        color: green;
+    }
+span.add{
+    border-left: 3px solid black;
+    margin-left: 10px;
+    padding: 10px;
+}
+span.delete{
+    float: right;
+    color: red;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1 title="hello sir/maddam">hello javascript</h1> -->
+    <!-- <form action="" id="myForm">
+        <h5></h5>
+        <input type="text" placeholder="name" id="name" >
+       
+        <input type="text" name="" id="age" placeholder="age">
+        <input type="text" placeholder="school" id="school">
+        <input type="text" name="" id="prof" placeholder="proffession">
+        <input type="text" placeholder="year of graduation" id="year">
+       
+        <input type="submit" name="" id=""> -->
+    <!-- </form>
+    <button onclick="this.innerHTML=numbers">array_display</button>
+    <form action="">
+        <label for="name">name</label>
+        <input type="text" name="" id="name" placeholder="name">
+       
+        <label for="age" title="your name here pls">age</label>
+        <h3></h3>
+        <input type="text" name="" id="age" placeholder="age">
+        <input type="submit" name="" id="">
+      
+    </form>
+    <button onclick="date()">DAte</button>
+    <script>
+        function date(){
+            document.querySelector("h1").innerHTML=Date()
+            
+        }
+    </script> -->
+    <div class="wrapper">
+        <h2>Add your favourite movies</h2>
+        <h1></h1>
+
+        <div class="movie-list">
+            <ul>
+                <li>
+                    
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+
+                    <span class="add">Adentures of the witchs</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+
+        <form action="" class="my-movie">
+            <input type="text" name="" id="movie">
+            <input type="submit" name="" id="button">
+        </form>
+    </div>
+    <button onmouseenter="enter()">click</button>
+     
+    
+    <script src="movie.js"></script>
+</body>
+</html>

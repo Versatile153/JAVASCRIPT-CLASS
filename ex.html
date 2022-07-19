@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-size: xx-large;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="" id="name" placeholder="name">
-    
+    <div class="loadpage"></div>
+    <div class="showpage">
+        <h1></h1>
+    </div>
+
 
     <script>
+        let load=0
+        let loadpage=document.querySelector(".loadpage")
+    let int=    setInterval(loading,30)
+        function loading(){
+            load++
+            console.log(load)
+            loadpage.innerText=`${load}%`
+            if(load >99){
+                clearInterval(int)
+
+                document.querySelector("h1").innerHTML=`
+
+                <h1>hello dear welcome</h1>
+                `
+                loadpage.style.opacity=scale(load,0,100,1,0)
+            
+            }
+         
+        }
+        const scale=(num,in_min,in_max,out_min,out_max)=>{
+          return(num-in_min) * (out_max-out_min)/(in_max-in_min)+out_min}
+         
+
+      
+
         
+
+
     </script>
 </body>
 </html>
